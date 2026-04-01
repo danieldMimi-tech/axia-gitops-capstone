@@ -1,3 +1,4 @@
+import pytest
 from app import app
 
 
@@ -45,3 +46,6 @@ def test_reverse_single_char(client):
 def test_health_returns_200(client):
     res = client.get('/health')
     assert res.status_code == 200
+
+
+
