@@ -37,15 +37,12 @@ def test_reverse_empty_string(client):
     res = client.post('/reverse-string', json={"text": ""})
     assert res.get_json()["result"] == ""
 
-
 def test_reverse_single_char(client):
     res = client.post('/reverse-string', json={"text": "a"})
     assert res.get_json()["result"] == "a"
 
-
 def test_health_returns_200(client):
     res = client.get('/health')
     assert res.status_code == 200
-
 
 
