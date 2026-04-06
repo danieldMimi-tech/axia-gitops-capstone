@@ -1,4 +1,4 @@
-# Axia GitOps Capstone Project
+# Axia GitOps Capstone Project - CI Pipeline
 
 ## Project Overview
 A lightweight internal service with a fully automated
